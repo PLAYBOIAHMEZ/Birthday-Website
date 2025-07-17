@@ -114,6 +114,12 @@ function Cake() {
           </motion.div>
         )}
         <div className="relative z-10">
+          {micPermissionGranted && !candlesBlownOut && (
+            <p className="text-white text-sm opacity-80 absolute top-[10%] left-1/2 transform -translate-x-1/2">
+              🎤 Mic access granted — blow to blow out the candles!
+            </p>
+          )}
+
           <div className="absolute -top-48 left-1/2 transform -translate-x-1/2">
             <div className="candle">
               {!candlesBlownOut && (
