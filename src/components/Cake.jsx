@@ -24,6 +24,12 @@ function Cake() {
         analyser = audioContext.createAnalyser();
         const source = audioContext.createMediaStreamSource(stream);
 
+        // 🔊 ADD gainNode to boost low input mics
+        const gainNode = audioContext.createGain();
+        gainNode.gain.value = 1; // You can increase to 4 if needed
+        source.connect(gainNode);
+        gainNode.connect(analyser);
+
         analyser.fftSize = 512;
         const bufferLength = analyser.frequencyBinCount;
         dataArray = new Uint8Array(bufferLength);
@@ -43,7 +49,7 @@ function Cake() {
         lowFrequencyValues.reduce((sum, value) => sum + value, 0) /
         lowFrequencyValues.length;
 
-      const blowThreshold = 100; // Moderate threshold
+      const blowThreshold = 40; // Moderate threshold
       const requiredDuration = 1500; // 1. 5 sec blow required
 
       if (averageLowFrequency > blowThreshold) {

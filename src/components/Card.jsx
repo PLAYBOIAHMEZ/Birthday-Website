@@ -40,15 +40,16 @@ function Card() {
               <div className="wrap">
                 <p>Happy Birthday, Manal!</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque delectus dolore recusandae eveniet dicta. Corrupti.
+                  Happy birthday to the most beautiful soul we both adore. Your
+                  laughter is contagious, your kindness unmatched. Life is
+                  better because you’re in it — today, tomorrow, always.
                 </p>
                 <p>I hope you have a very blessed birthday!</p>
+
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Repudiandae, cum.
+                  May your year ahead be filled with joy, love, and endless
+                  surprise.
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p className="signed">Bushuu Dwarf & Ahmed</p>
               </div>
             </div>
