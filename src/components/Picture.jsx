@@ -3,9 +3,33 @@ import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
 import SectionWrapper from "./SectionWrapper";
-import { img1, img2, img3, img4, img5, img6, img7, img8 } from "../assets";
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+} from "../assets";
 // Add your own images by putting them in the assets folder and import them.
-const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+const images = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+];
 function Picture() {
   const [loadedImages, setLoadedImages] = useState(0);
 
