@@ -26,7 +26,7 @@ function Cake() {
 
         // 🔊 ADD gainNode to boost low input mics
         const gainNode = audioContext.createGain();
-        gainNode.gain.value = 1; // You can increase to 4 if needed
+        gainNode.gain.value = 3; // You can increase to 4 if needed
         source.connect(gainNode);
         gainNode.connect(analyser);
 
